@@ -3,7 +3,7 @@ import { actionTypes } from './products.actions'
 const initialState = {
   loading: false,
   errorMessage: '',
-  data: []
+  data: ["product1"]
 }
 
 export function productsReducer(state = initialState, action) {

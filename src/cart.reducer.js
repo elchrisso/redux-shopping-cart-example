@@ -1,3 +1,5 @@
+import { actionTypes } from './cart.actions'
+
 const initialState = {
   products: [],
   total: 0.00
@@ -5,8 +7,11 @@ const initialState = {
 
 export function cartReducer (state = initialState, action) {
   switch (action.type) {
-    case 'addProducts':
-      console.log("hello i am the cart")
+    case actionTypes.ADD:
+      initialState.total += 1
+      return {
+        state
+      }
     default:
       return state
   }

@@ -1,3 +1,9 @@
-/**
- * Created by cbHomeFolder on 6/21/17.
- */
+export const actionTypes = {
+  ADD: '[Cart] add product'
+}
+
+export function addProduct() {
+  return {
+    type: actionTypes.ADD
+  }
+}
