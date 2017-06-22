@@ -4,5 +4,10 @@ const initialState = {
 }
 
 export function cartReducer (state = initialState, action) {
-  return state
+  switch (action.type) {
+    case 'addProducts':
+      console.log("hello i am the cart")
+    default:
+      return state
+  }
 }
